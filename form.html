@@ -4,27 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-</head>
+    <title>Registration</title>
+</head> 
 
 <body>
-    <h1 align="center">About Page</h1>
-    <div align="center">
-        <p>
-            Welcome to [Your Company Name], a place where passion meets innovation.
-        </p>
-        <h2>Our Mission</h2>
-            <p>At [Your Company Name], our mission is to revolutionize the way people experience [your industry or field]. We are dedicated to creating innovative solutions that empower and inspire individuals and businesses alike.</p>
-        <h2>Who We Are</h2>
-            <p>We are a team of enthusiastic professionals driven by a shared vision of making a positive impact on the world. Our diverse skill sets and backgrounds enable us to approach challenges creatively and deliver exceptional results.</p>
-        <h2>Contact Us</h2>
-            <p>We'd love to hear from you! If you have any questions, feedback, or inquiries, please feel free to contact us.
-    
-                Feel free to customize and adapt this content to suit your specific company's information and style.
-            </p>
-    </div>
+    <div  align='center'>
+        <table cellpadding="20px" >
+            <form action="index.html">
+                <tr>
+                    <td>
+                        <label for="name">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Enter Your Name" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td><input type="email" placeholder="Enter your Email" required id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" required id="password" placeholder="Enter your Password "></td>
+                </tr>
+                <tr>
+                    <td><label for="Number">Phone Number:</label></td>
+                    <td><input type="number" required id="number" placeholder="Enter your Phone Number"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td><label for="male">Male:</label>
+                        <input type="radio" id="male" name="Language">
+                        <label for="female">Female:</label>
+                        <input type="radio" id="female" name="Language">
+                        <label for="others">Others:</label>
+                        <input type="radio" id="others" name="Language">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="lang">Language:</label></td>
+                    <td>
+                        <select id="lang">
+                            <option>Select Language</option>
+                            <option value="Tamil">Tamil</option>
+                            <option value="Tamil">English</option>
+                            <option value="Tamil">Hindi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="numberpin">Pin Code:</label></td>
+                    <td><input type="number" required id="numberpin" placeholder=" Enter your Pin Code "></td>
+                </tr>
+                <tr>
+                    <td> <label for="about">About:</label></td>
+                    <td> <textarea required id="about" placeholder="Write about yourself......"></textarea></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Register</button></td>
 
-  
+                </tr>
+            </form>
+        </table>
+    </div>
 </body>
 
 </html>
